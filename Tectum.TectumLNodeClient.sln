@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tectum.TectumLNodeClient", "src\Tectum.TectumLNodeClient.csproj", "{298BF66A-E7D4-4EDB-AFC4-1D175125CBF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4C2DCBA0-7DBF-4C26-8473-1AD477B21116}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2676981F-6EF6-41AF-8287-080CA8639CAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tectum.TectumLNodeClient.Tests", "tests\Tectum.TectumLNodeClient.Tests\Tectum.TectumLNodeClient.Tests.csproj", "{0ABE5761-F95F-45C9-A601-F4DD9B0DFBB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{298BF66A-E7D4-4EDB-AFC4-1D175125CBF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{298BF66A-E7D4-4EDB-AFC4-1D175125CBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{298BF66A-E7D4-4EDB-AFC4-1D175125CBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{298BF66A-E7D4-4EDB-AFC4-1D175125CBF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ABE5761-F95F-45C9-A601-F4DD9B0DFBB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ABE5761-F95F-45C9-A601-F4DD9B0DFBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ABE5761-F95F-45C9-A601-F4DD9B0DFBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ABE5761-F95F-45C9-A601-F4DD9B0DFBB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{298BF66A-E7D4-4EDB-AFC4-1D175125CBF2} = {4C2DCBA0-7DBF-4C26-8473-1AD477B21116}
+		{0ABE5761-F95F-45C9-A601-F4DD9B0DFBB5} = {2676981F-6EF6-41AF-8287-080CA8639CAA}
+	EndGlobalSection
+EndGlobal
