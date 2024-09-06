@@ -30,7 +30,6 @@ The Light Node supports the following types of requests:
 
 ### Key management: ###
 
--   POST /keys/generate: Generate new keys
 -   POST /keys/recover: Recover keys using a seed phrase
 -   GET /keys/public/byuserid: Retrieve the public key by user ID
 -   GET /keys/public/byskey: Retrieve the public key by session key
