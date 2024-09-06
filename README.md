@@ -7,7 +7,6 @@ The Light Node supports the following types of requests:
 -   GET /tokens: Retrieve a list of all tokens
 -   POST /tokens: Create a new token
 -   GET /tokens/fee: Retrieve fee of creating token
--   GET /tokens/ticker: Retrieve information about a specific token
 -   POST /tokens/transfer: Transfer tokens
 -   GET /tokens/transfer/fee: Retrieve fee of token transfer
 -   GET /tokens/transfers: Retrieve token transfer history
