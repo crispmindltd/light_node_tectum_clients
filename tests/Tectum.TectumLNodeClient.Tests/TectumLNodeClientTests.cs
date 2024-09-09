@@ -17,7 +17,7 @@ public class Tests
         _nodeClient = new TectumLNodeClient(httpClient);
     }
 
-    [Test]
+    [Ignore("Need mock Lite Node Server")]
     public async Task GetCoinBalancesAsync_Success()
     {
         var result = await _nodeClient.GetCoinBalancesAsync(new GetCoinsBalancesRequest
