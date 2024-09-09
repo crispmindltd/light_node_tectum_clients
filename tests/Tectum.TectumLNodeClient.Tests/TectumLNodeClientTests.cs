@@ -30,7 +30,7 @@ public class Tests
         result.Balances.Count.Should().BeGreaterThan(1);
     }
     
-    [Test]
+    [Ignore("Need mock Lite Node Server")]
     public async Task GetCoinTransfersAsync_Success()
     {
         var result = await _nodeClient.GetCoinTransfersAsync(new GetCoinsTransfersRequest
