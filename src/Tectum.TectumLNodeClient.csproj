@@ -6,15 +6,15 @@
         <Copyright>Copyright Crispmind LTD 2024</Copyright>
         <Title>Package integration to Tectum Lite Node: https://github.com/crispmindltd/light_node_tectum</Title>
         <Description>Package integration to Tectum Lite Node</Description>
-        <PackageProjectUrl>https://github.com/users/crispmindltd/packages/nuget/package/SoftNote.Integrations.Recaptcha</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/crispmindltd/light_node_tectum_clients</PackageProjectUrl>
         <RepositoryUrl>https://github.com/crispmindltd/light_node_tectum_clients</RepositoryUrl>
         <RepositoryType>GIT</RepositoryType>
-        <PackageTags>Recaptcha</PackageTags>
-        <Authors>Crispmind dev team</Authors>
-        <Company>https://crispmind.io/</Company>
-        <FileVersion>1.0.100</FileVersion>
-        <Version>1.0.100</Version>
-        <PackageVersion>1.0.100</PackageVersion>
+        <PackageTags>Tectum, Light Node, LNode</PackageTags>
+        <Authors>Crispmind LTD</Authors>
+        <Company>https://tectum.io/tectum-blockchain/</Company>
+        <FileVersion>1.0.101</FileVersion>
+        <Version>1.0.101</Version>
+        <PackageVersion>1.0.101</PackageVersion>
 
     </PropertyGroup>
 
