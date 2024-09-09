@@ -48,13 +48,12 @@ jobs:
       run: dotnet pack --configuration Release --no-build --output .
            
     - name: Push nuget.org
-      
-      run: dotnet nuget push *.nupkg --api-key ${NUGET_TOKEN} --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push *.nupkg --api-key ${NUGET_TOKEN} --source https://api.nuget.org/v3/index.json --skip-duplicate
       env:
         NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
         
-    - name: Push to nuget.pkg.github.com
-      run: dotnet nuget push *.nupkg --source https://nuget.pkg.github.com/crispmindltd/index.json --api-key ${GITHUB_TOKEN}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #- name: Push to nuget.pkg.github.com
+    #  run: dotnet nuget push *.nupkg --source https://nuget.pkg.github.com/crispmindltd/index.json --api-key ${GITHUB_TOKEN} --skip-duplicate
+    #  env:
+    #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
    
