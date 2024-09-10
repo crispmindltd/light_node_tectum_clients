@@ -55,5 +55,5 @@ jobs:
     - name: Push to nuget.pkg.github.com
       run: dotnet nuget push *.nupkg --source https://nuget.pkg.github.com/crispmindltd/index.json --api-key ${GITHUB_TOKEN} --skip-duplicate
       env:
-        GITHUB_TOKEN: ${{ secrets.NUGET_TOKEN_TECTUM_LNODE }}
+        GITHUB_TOKEN: ${{ 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 }}
    
