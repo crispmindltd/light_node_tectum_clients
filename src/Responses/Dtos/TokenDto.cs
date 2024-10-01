@@ -25,6 +25,9 @@ namespace Tectum.TectumLNodeClient.Responses.Dtos
         public long Decimals { get; set; }
         
         [JsonPropertyName("info")]
-        public long Info { get; set; }
+        public string? Info { get; set; }
+        
+        [JsonPropertyName("address")]
+        public string? Address { get; set; }
     }
 }
