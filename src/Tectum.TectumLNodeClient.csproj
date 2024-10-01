@@ -12,9 +12,9 @@
         <PackageTags>Tectum, Light Node, LNode</PackageTags>
         <Authors>Crispmind LTD</Authors>
         <Company>https://tectum.io/tectum-blockchain/</Company>
-        <FileVersion>1.0.101</FileVersion>
-        <Version>1.0.101</Version>
-        <PackageVersion>1.0.101</PackageVersion>
+        <FileVersion>1.0.102</FileVersion>
+        <Version>1.0.102</Version>
+        <PackageVersion>1.0.102</PackageVersion>
 
     </PropertyGroup>
 
