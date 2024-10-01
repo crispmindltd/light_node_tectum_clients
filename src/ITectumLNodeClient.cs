@@ -110,7 +110,7 @@ namespace Tectum.TectumLNodeClient
         Task<KeyRecoverResponse?> KeyRecoverAsync(
             KeyRecoverRequest request,
             CancellationToken cancellationToken = default);
-        
+
         /// <summary>
         /// Get public key for user: GET /keys/public/byuserid
         /// </summary>
@@ -120,7 +120,7 @@ namespace Tectum.TectumLNodeClient
         Task<GetKeyPublicResponse?> GetKeyPublicUserAsync(
             GetKeyPublicUserRequest request,
             CancellationToken cancellationToken = default);
-        
+
         /// <summary>
         /// Get public key for session key: GET /keys/public/byskey
         /// </summary>
@@ -130,18 +130,27 @@ namespace Tectum.TectumLNodeClient
         Task<GetKeyPublicResponse?> GetKeyPublicSessionKeyAsync(
             GetKeyPublicSessionKeyRequest request,
             CancellationToken cancellationToken = default);
-        
+
         #endregion
-        
+
         #region Tokens
-        
+
         /// <summary>
         /// Get token information: GET /tokens
         /// </summary>
         /// <param name="cancellationToken"></param>
         /// <returns>Get keys for</returns>
         Task<GetTokensResponse?> GetTokensAsync(CancellationToken cancellationToken = default);
-        
+
+        /// <summary>
+        /// Get token's transactions information: GET /tokens/transfers
+        /// </summary>
+        /// <param name="request">Filter transactions</param>
+        /// <param name="cancellationToken"></param>
+        /// <returns>Get keys for</returns>
+        Task<GetTokensTransfersResponse?> GetTokensTransfersAsync(GetTokensTransfersRequest request,
+            CancellationToken cancellationToken = default);
+
         /// <summary>
         /// Create new token: POST /tokens
         /// </summary>
@@ -158,7 +167,8 @@ namespace Tectum.TectumLNodeClient
         /// <param name="request">Information </param>
         /// <param name="cancellationToken"></param>
         /// <returns>Get fee</returns>
-        Task<GetTokensFeeResponse?> GetTokensFeeAsync(GetTokensFeeRequest request, CancellationToken cancellationToken = default);
+        Task<GetTokensFeeResponse?> GetTokensFeeAsync(GetTokensFeeRequest request,
+            CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Create transfer token: POST /tokens/transfer
@@ -166,7 +176,8 @@ namespace Tectum.TectumLNodeClient
         /// <param name="request">Information </param>
         /// <param name="cancellationToken"></param>
         /// <returns>Get fee</returns>
-        Task<CreateTokensTransferResponse?> CreateTokensTransferAsync(CreateTokensTransferRequest request, CancellationToken cancellationToken = default);
+        Task<CreateTokensTransferResponse?> CreateTokensTransferAsync(CreateTokensTransferRequest request,
+            CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Get fee for transfer tokens: GET /tokens/transfer/fee
@@ -174,7 +185,8 @@ namespace Tectum.TectumLNodeClient
         /// <param name="request">Information of transaction</param>
         /// <param name="cancellationToken"></param>
         /// <returns>Get fee</returns>
-        Task<GetTokensTransferFeeResponse?> GetTokensTransferFeeAsync(GetTokensTransferFeeRequest request, CancellationToken cancellationToken = default);
+        Task<GetTokensTransferFeeResponse?> GetTokensTransferFeeAsync(GetTokensTransferFeeRequest request,
+            CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Get balance by address: GET /tokens/balance/byaddress
@@ -182,7 +194,8 @@ namespace Tectum.TectumLNodeClient
         /// <param name="request">Information of address</param>
         /// <param name="cancellationToken"></param>
         /// <returns>Get balance</returns>
-        Task<GetTokensBalanceAddressResponse?> GetTokensBalanceAddressAsync(GetTokensBalanceAddressRequest request, CancellationToken cancellationToken = default);
+        Task<GetTokensBalanceAddressResponse?> GetTokensBalanceAddressAsync(GetTokensBalanceAddressRequest request,
+            CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Get balance by ticker token: GET /tokens/balance/byticker
@@ -190,7 +203,8 @@ namespace Tectum.TectumLNodeClient
         /// <param name="request">Ticker information</param>
         /// <param name="cancellationToken"></param>
         /// <returns>Get balance</returns>
-        Task<GetTokensBalanceAddressResponse?> GetTokensBalanceTickerAsync(GetTokensBalanceTickerRequest request, CancellationToken cancellationToken = default);
+        Task<GetTokensBalanceAddressResponse?> GetTokensBalanceTickerAsync(GetTokensBalanceTickerRequest request,
+            CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Get address by ticker token: GET /tokens/address/byid
@@ -198,7 +212,8 @@ namespace Tectum.TectumLNodeClient
         /// <param name="request">Id token</param>
         /// <param name="cancellationToken"></param>
         /// <returns>Get address</returns>
-        Task<GetTokensAddressResponse?> GetTokensAddressIdAsync(GetTokensAddressIdRequest request, CancellationToken cancellationToken = default);
+        Task<GetTokensAddressResponse?> GetTokensAddressIdAsync(GetTokensAddressIdRequest request,
+            CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Get address by ticker token: GET /tokens/address/byticker
@@ -206,8 +221,9 @@ namespace Tectum.TectumLNodeClient
         /// <param name="request">Id token</param>
         /// <param name="cancellationToken"></param>
         /// <returns>Get address</returns>
-        Task<GetTokensAddressResponse?> GetTokensAddressTickerAsync(GetTokensAddressTickerRequest request, CancellationToken cancellationToken = default);
-        
+        Task<GetTokensAddressResponse?> GetTokensAddressTickerAsync(GetTokensAddressTickerRequest request,
+            CancellationToken cancellationToken = default);
+
         #endregion
     }
 }

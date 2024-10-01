@@ -119,6 +119,11 @@ namespace Tectum.TectumLNodeClient
             return GetAsync<GetTokensResponse>("tokens", new Dictionary<string, string>(), cancellationToken);
         }
 
+        public Task<GetTokensTransfersResponse?> GetTokensTransfersAsync(GetTokensTransfersRequest request, CancellationToken cancellationToken = default)
+        {
+            return GetAsync<GetTokensTransfersResponse>("tokens/transfers", new Dictionary<string, string>(), cancellationToken);
+        }
+
         public Task<CreateTokensResponse?> CreateTokensAsync(CreateTokensRequest request,
             CancellationToken cancellationToken = default)
         {

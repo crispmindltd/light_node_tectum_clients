@@ -43,4 +43,20 @@ public class Tests
         result!.HasError.Should().BeFalse();
         result.Transactions!.Count.Should().Be(25);
     }
+    
+    //[Ignore("Need mock Lite Node Server")]
+    [Test]
+    public async Task GetTokensTransfersAsync_Success()
+    {
+        var result = await _nodeClient.GetTokensTransfersAsync(new GetTokensTransfersRequest
+        {
+            Ticker = "focus",
+            Rows = 25,
+            Skip = 1
+        });
+
+        result.Should().NotBeNull();
+        result!.HasError.Should().BeFalse();
+        result.Transactions!.Count.Should().Be(25);
+    }
 }
