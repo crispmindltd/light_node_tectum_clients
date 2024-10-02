@@ -44,13 +44,13 @@ public class Tests
         result.Transactions!.Count.Should().Be(25);
     }
     
-    //[Ignore("Need mock Lite Node Server")]
+    [Ignore("Need mock Lite Node Server")]
     [Test]
     public async Task GetTokensTransfersAsync_Success()
     {
         var result = await _nodeClient.GetTokensTransfersAsync(new GetTokensTransfersRequest
         {
-            Ticker = "focus",
+            Ticker = "FOCUS",
             Rows = 25,
             Skip = 1
         });
